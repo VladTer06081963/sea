@@ -1,0 +1,78 @@
+* {
+  margin: 0;
+}
+
+html,
+body {
+  height: 100vh;
+}
+
+.bg_sea-video {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+.container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  color: #ffffff;
+  animation-name: show;
+  animation-duration: 5s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+@keyframes show {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.container {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.container .header-main {
+  font-family: 'Lobster', cursive;
+  font-size: 6rem;
+  text-transform: uppercase;
+  background: repeating-linear-gradient(
+    white,
+    white 2px,
+    transparent 2px,
+    transparent 4px
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.container .header-second {
+  font-family: 'Lobster', cursive;
+  font-size: 2rem;
+  font-weight: 500;
+  margin-bottom: 30px;
+}
+
+.container svg {
+  width: 64px;
+  height: 64px;
+}
+
+.container svg g {
+  fill: #fff;
+}
+
+.container svg :hover g {
+  fill: #0c0b0b;
+}
